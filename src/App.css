@@ -1,0 +1,79 @@
+* {
+    box-sizing : border-box; 
+    padding: 0; 
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg)
+}
+
+a{
+    color: unset ;
+    text-decoration: none;
+}
+.gradient__bg {
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  
+    /* Opera 11.10+ */
+    background: -o-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  
+    /* IE 10+ */
+    background: -ms-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  
+    /* Global support */
+    background: radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  }
+  .gradient__text {
+    background:var(--gradient-text);
+    background-clip: text ;
+    -webkit-background-clop: text ; 
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .section__padding :{
+    padding: 4rem 6rem ; 
+  }
+  .section__margin :{
+    margin: 4rem 6rem ; 
+  }
+
+  .slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  
+
+  @media screen andn (max-wideth: 700px){
+    .section__padding {
+        padding: 4rem 2rem; 
+    }
+    .section_margine{
+        margine: 4rem 2rem; 
+    }
+  }

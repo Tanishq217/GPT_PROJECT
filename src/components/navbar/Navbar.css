@@ -1,0 +1,211 @@
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+.gpt3__navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.gpt3__navbar-links_logo {
+    margin-right: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    font-family: var(--font-family);
+    white-space: nowrap; /* ✅ Prevents line break */
+    flex-shrink: 0; 
+}
+
+.gpt3__navbar-links_logo img {
+    width: 100px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.gpt3__navbar-links_container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.gpt3__navbar-links_container p a {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.gpt3__navbar-links_container p a:hover {
+    color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .gpt3__navbar {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gpt3__navbar-links_container {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    
+}
+
+.gpt3__navbar-sign {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px;
+    gap: 1.9rem;
+    font-size: 20px;
+    color: white;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button {
+    padding: 0.4rem 1.5rem;
+    font-family: yellow;
+    background-color: white;
+    border-radius: 4%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.pushdown {
+    margin-top: 5px;
+}
+
+.gpt3__navbar-menu {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start; /* Align it with the logo */
+}
+
+.gpt3__navbar-menu svg {
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: white;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.gpt3__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.gpt3__navbar-menu_container-links-sign {
+    display: block;
+    margin-top: 1rem;
+    color: black;
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt3__navbar-links_container {
+        display: none;
+    }
+    .gpt3__navbar-menu {
+        display: flex;
+        
+    }
+    .gpt3__navbar-sign {
+        margin-left: 400px;
+    }
+
+ }
+
+@media screen and (max-width: 700px) {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+
+    .gpt3__navbar-sign {
+        display: none;
+    }
+    
+
+    .gpt3__navbar-menu {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gpt3__navbar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start; /* Align menu items with the logo */
+        margin-top: 0;
+    }
+
+  
+
+    .gpt3__navbar {
+        padding: 1rem 2rem;
+        flex-direction: row; /* Maintain row direction */
+        align-items: center;
+        position: relative;
+    }
+
+    .gpt3__navbar-sign {
+        display: none;
+    }
+
+    .gpt3__navbar-links_logo {
+        align-self: center; /* Align logo in the center */
+        margin-top: 0;
+    }
+
+    .gpt3__navbar-menu {
+        margin-top: 0;
+    }
+}
+
+.gpt3__navbar-links_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    font-family: var(--font-family);
+    height: 100%;
+}
+
+.gpt3__navbar-links {
+    display: flex;
+    align-items: center;
+}
