@@ -15,19 +15,24 @@ a{
 }
 .gradient__bg {
     /* Firefox 3.6+ */
-    background: -moz-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  
-    /* Opera 11.10+ */
-    background: -o-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  
-    /* IE 10+ */
-    background: -ms-radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  
-    /* Global support */
-    background: radial-gradient(circle at 2% 0%, rgba(255, 255, 0, 1) 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 35, 1) 0%, rgba(0, 0, 38, 1) 21%, rgba(1, 0, 80, 1) 59%, rgba(0, 3, 50, 1) 100%, rgba(0, 0, 35, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 35, 1) 0%, rgba(0, 0, 38, 1) 21%, rgba(1, 0, 80, 1) 59%, rgba(0, 3, 50, 1) 100%, rgba(0, 0, 35, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(180deg, rgba(0, 0, 35, 1) 0%, rgba(0, 0, 38, 1) 21%, rgba(1, 0, 80, 1) 59%, rgba(0, 3, 50, 1) 100%, rgba(0, 0, 35, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(180deg, rgba(0, 0, 35, 1) 0%, rgba(0, 0, 38, 1) 21%, rgba(1, 0, 80, 1) 59%, rgba(0, 3, 50, 1) 100%, rgba(0, 0, 35, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(180deg, rgba(0, 0, 35, 1) 0%, rgba(0, 0, 38, 1) 21%, rgba(1, 0, 80, 1) 59%, rgba(0, 3, 50, 1) 100%, rgba(0, 0, 35, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   .gradient__text {
     background:var(--gradient-text);

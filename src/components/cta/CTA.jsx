@@ -7,5 +7,3 @@ const CTA = () => {
 }
 
 export default CTA
-
-// test 2 
