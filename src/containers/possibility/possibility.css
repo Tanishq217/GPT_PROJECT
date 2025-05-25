@@ -80,3 +80,18 @@
     line-height: 1.2;
   }
   
+  @media screen and (max-width: 663px) {
+   .section__container{
+    justify-content: center;
+    block-size: 100%;
+    
+   }
+  
+    .gradient__text1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px; /* Adjust for smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  }

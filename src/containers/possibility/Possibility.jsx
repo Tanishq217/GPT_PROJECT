@@ -3,7 +3,7 @@ import './possibility.css'
 import PossibilityImage from '../../assets/possibility.png'
 const Possibility = () => {
   return (
-    <div className="section__container">
+  <div className="section__container">
   <div className="section__image">
     <img src= {PossibilityImage} alt="illustration" />
   </div>
