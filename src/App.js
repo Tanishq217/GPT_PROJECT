@@ -8,7 +8,7 @@ import {
 import { Navbar, Brand, CTA } from './components';
 
 const App = () => (
-  <div className="App">
+  <div  style={{ overflowX: 'hidden' }} className="App">
     <div className="gradient__bg">
       <Navbar />
       <Header />

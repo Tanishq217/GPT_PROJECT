@@ -76,3 +76,14 @@
     }
 
 }
+
+.gpt3__blog-heading h1 {
+    margin-left: 30px;
+}
+
+.gpt3__blog-container_groupA{
+    padding: 30px;
+}
+.gpt3__blog-container_groupB{
+    padding: 30px;
+}
